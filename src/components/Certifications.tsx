@@ -1,0 +1,84 @@
+const Certifications = () => {
+  const certifications = [
+    {
+      title: "PROFESSIONAL CERTIFICATION UX/UI Designer",
+      issuer: "Uxcel",
+      date: "2025",
+      image: "uxcel.png",
+    },
+    {
+      title: "AI/ML Engineer - Stage 1",
+      issuer: "SLIIT",
+      date: "2025",
+      image: "sliit.jpg",
+    },
+    {
+      title: "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
+      issuer: "Microsoft & LinkedIn",
+      date: "2025",
+      image: "linkedin.jpeg",
+    },
+    {
+      title: "Introduction to User Experience Design",
+      issuer: "Georgia Institute of Technology - Coursera",
+      date: "2024",
+      image: "coursera.jpeg",
+    },
+    {
+      title: "Figma Essential for UI/UX",
+      issuer: "Udemy - Learnify IT",
+      date: "2024",
+      image: "udemy.jpg",
+    },
+    {
+      title: "IT Essentials",
+      issuer: "Cisco Networking Academy",
+      date: "2025",
+      image: "cisco.jpg",
+    },
+  ];
+
+  return (
+    <section id="certifications" className="py-20 relative">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-5xl font-bold mb-6">
+            <span className="gradient-text">Certifications</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Continuous learning and professional development achievements
+          </p>
+          <div className="w-24 h-1 gradient-primary mx-auto rounded-full mt-6" />
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="group glass-effect rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105 animate-scale-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden rounded-lg mb-4">
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-full object-cover object-center rounded-lg"
+                />
+              </div>
+
+              <h3 className="text-lg font-bold mb-2 group-hover:gradient-text transition-all duration-300">
+                {cert.title}
+              </h3>
+
+              <p className="text-purple-300 text-sm mb-2">{cert.issuer}</p>
+
+              <p className="text-muted-foreground text-sm">{cert.date}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Certifications;
