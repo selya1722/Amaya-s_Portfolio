@@ -62,7 +62,7 @@ const Contact = () => {
                 {/* LinkedIn */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">💼</span>
+                    <span className="text-white text-xl">Li</span>
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">LinkedIn</p>
@@ -77,10 +77,27 @@ const Contact = () => {
                   </div>
                 </div>
 
+                 <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">Ux</span>
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground text-sm">Uxcel</p>
+                    <a
+                      href="https://app.uxcel.com/ux/amaya17"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground underline hover:text-primary transition-colors"
+                    >
+                      app.uxcel.com/ux/amaya17
+                    </a>
+                  </div>
+                </div>
+
                 {/* GitHub */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">🐙</span>
+                    <span className="text-white text-xl">git</span>
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">GitHub</p>
@@ -94,11 +111,12 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-
+              
+              
                 {/* Behance */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">🎨</span>
+                    <span className="text-white text-xl">B</span>
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Behance</p>
@@ -114,6 +132,9 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+
+ 
+
 
             <div className="glass-effect rounded-2xl p-8 border border-pink-500/20">
               <h4 className="text-xl font-bold mb-4 gradient-text">
