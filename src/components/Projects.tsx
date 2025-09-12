@@ -1,47 +1,59 @@
-
 const Projects = () => {
   const projects = [
+    
+    {
+      title: "TechFlow Solutions – Business Performance Dashboard",
+      description: "A data-driven dashboard that simplifies decision-making with clear KPIs, performance insights, and smart visual analytics.",
+      tech: ["Figma,", "Behance", "Prototyping"],
+      image: "tfs.png",
+      gradient: "from-purple-500 to-blue-600",
+       live: "https://www.figma.com/proto/vWWKyOBgQSLoOw2IqyZQO3/TFS-dashboard--my-first-?page-id=0%3A1&node-id=21-83&p=f&viewport=420%2C201%2C0.1&t=ccxKPmSJQZ3JmLde-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=21%3A83",   
+       code: "https://www.behance.net/gallery/234404347/TFS-Business-Performance-Dashboard"   
+    },
+    {
+      title: "SheSafe – Women’s Safety App",
+      description: "An empowering safety app designed to provide women with instant alerts, real-time tracking, and peace of mind at their fingertips.",
+      tech: ["Figma","Behance", "Prototyping"],
+      image: "she.png",
+      gradient: "from-pink-200 to-rose-300",
+       live: "https://www.figma.com/proto/DvsvEEiWdriVvehnvKkaCW/SheSafe?page-id=0%3A1&node-id=1-2&p=f&viewport=20%2C263%2C0.11&t=8onp5Ljvgmelgd88-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2",  
+       code: "https://www.behance.net/gallery/234253819/SheSafe-Smart-Safety-Stronger-You"   
+    },
+    {
+      title: "AloeGuard – Smart Plant Health App",
+      description: "An intelligent mobile app built to diagnose Aloe Vera diseases and offer tailored solutions for healthier plants.", 
+      tech: ["Figma", "Behance", "Prototyping"],
+      image: "aloe.png",
+      gradient: "from-green-500 to-cyan-200",
+      live: "https://www.figma.com/proto/aDSIPkAOJQBAu19wGI097h/AloeGuard?page-id=0%3A1&node-id=32-51&p=f&viewport=119%2C-3%2C0.19&t=tBlcApV47mrdjcQI-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A51", 
+      code: "https://www.behance.net/gallery/230392773/AloeGuard-Mobile-Application"
+    },
     {
       title: "BCS Solutions Website",
       description:"A modern responsive website, showcasing professional security solutions and services with a focus on trust, reliability, and client engagement.",
       tech: ["Typescript", "Next.js", "tailwindcss", "Vercel"],
       image: "bcs (2).png",
-      gradient: "from-pink-500 to-purple-600"
+      gradient: "from-purple-500 to-white-600",
+      live: "https://bcs-solutions.vercel.app",  
+      code: "https://github.com/selya1722/bcs-solutions"   
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.",
-      tech: ["React", "TypeScript", "Firebase", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-      gradient: "from-purple-500 to-blue-600"
+      title: "App Ratings Predictor – Smarter Insights with AI",
+      description: "A concept project merging UI/UX insights with machine learning to forecast app performance and improve user experience.",
+      tech: ["Python","Jupiter Notebook", "Machine Learning"],
+      image: "uxml.png"  ,
+      gradient: "from-blue-300 to-indigo-600",
+      live: "https://www.behance.net/gallery/228959337/App-Ratings-Predictor-Merging-UIUX-Insight-with-ML",   
+      code: "https://github.com/selya1722/app-rating-prediction-uxml"
     },
     {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with data visualization, automated reporting, and multi-platform integration.",
-      tech: ["React", "D3.js", "Python", "PostgreSQL"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
-      gradient: "from-blue-500 to-cyan-600"
-    },
-    {
-      title: "Portfolio Website",
-      description: "Custom portfolio website with stunning animations, responsive design, and optimized performance for creative professionals.",
-      tech: ["React", "Framer Motion", "GSSP", "Vercel"],
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop",
-      gradient: "from-pink-500 to-rose-600"
-    },
-    {
-      title: "Learning Platform",
-      description: "Interactive online learning platform with video streaming, progress tracking, and gamification elements for enhanced engagement.",
-      tech: ["React", "Express", "AWS", "WebRTC"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
-      gradient: "from-purple-500 to-indigo-600"
-    },
-    {
-      title: "Weather App",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and personalized weather insights.",
-      tech: ["React Native", "OpenWeather API", "Redux", "Maps"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop",
-      gradient: "from-blue-500 to-teal-600"
+      title: "FoodieBuddy – Your Smart Food Ordering App",
+      description: "A sleek app that makes food ordering faster, smarter, and personalized with seamless browsing and easy checkout.",
+      tech: ["Figma", "Behance", "Prototyping"],
+      image: "foodiebuddy.png",
+      gradient: "from-yellow-500 to-teal-600",
+      live: "https://www.figma.com/proto/sVGqYfz3KPRA5qdg5LWMLZ/food_order_app?page-id=0%3A1&node-id=159-109&p=f&viewport=220%2C309%2C0.17&t=whIVEiIdShWAq4Yf-1&scaling=scale-down&content-scaling=fixed",   
+      code: "https://www.behance.net/gallery/223349527/FoodieBuddy-Your-Online-Food-Ordering-Pal"
     }
   ];
 
@@ -91,14 +103,25 @@ const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                  <button className="flex-1 py-2 px-4 gradient-primary text-white rounded-lg hover:scale-105 transition-transform duration-300">
-                    View Live
-                  </button>
-                  <button className="flex-1 py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300">
-                    View Code
-                  </button>
-                </div>
+               <div className="flex gap-3">
+  <a
+    href={project.live}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 py-2 px-4 gradient-primary text-white rounded-lg hover:scale-105 transition-transform duration-300 text-center"
+  >
+    View Live
+  </a>
+  <a
+    href={project.code}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex-1 py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center"
+  >
+    View More
+  </a>
+</div>
+
               </div>
             </div>
           ))}
