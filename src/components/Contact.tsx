@@ -1,41 +1,68 @@
-import { useState } from 'react';
-import { Mail } from 'lucide-react';
+import { useState } from "react";
+import { Mail } from "lucide-react";
+import { toast } from "@/components/ui/use-toast"; // 👈 make sure shadcn toast is set up
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
+    const form = e.currentTarget;
+    setLoading(true);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    try {
+      const response = await fetch("https://formspree.io/f/xgvldglg", {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        toast({
+          title: "💌 Message Sent!",
+          description:
+            "Your note is flying through the pink clouds to my inbox ✨",
+          className:
+            "bg-pink-600 text-white font-medium rounded-xl shadow-lg border border-pink-400",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "😢 Oops, didn’t work!",
+          description: "Looks like something broke. Please try again soon 💔",
+          className:
+            "bg-pink-900 text-pink-100 font-medium rounded-xl shadow-lg border border-pink-500",
+        });
+      }
+    } catch (err) {
+      toast({
+        title: "⚠️ Network Trouble!",
+        description: "The internet fairies are asleep 💤 Try again later.",
+        className:
+          "bg-pink-900 text-pink-100 font-medium rounded-xl shadow-lg border border-pink-500",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <section id="contact" className="py-20 relative">
       <div className="container mx-auto px-6">
+        {/* Heading */}
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold mb-6">
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Let's collaborate and create something amazing together. I'd love to hear from you!
+            Let's collaborate and create something amazing together. I'd love to
+            hear from you!
           </p>
           <div className="w-24 h-1 gradient-primary mx-auto rounded-full mt-6" />
         </div>
 
         <div className="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
+          {/* Left side (contact info) */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="glass-effect rounded-2xl p-8 border border-purple-500/20">
               <h3 className="text-2xl font-bold mb-6 gradient-text">
@@ -77,7 +104,8 @@ const Contact = () => {
                   </div>
                 </div>
 
-                 <div className="flex items-center space-x-4">
+                {/* Uxcel */}
+                <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
                     <span className="text-white text-xl">Ux</span>
                   </div>
@@ -111,8 +139,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-              
-              
+
                 {/* Behance */}
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
@@ -132,9 +159,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
- 
-
 
             <div className="glass-effect rounded-2xl p-8 border border-pink-500/20">
               <h4 className="text-xl font-bold mb-4 gradient-text">
@@ -157,9 +181,12 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <form onSubmit={handleSubmit} className="glass-effect rounded-2xl p-8 border border-purple-500/20 space-y-6">
+          {/* Right side (contact form) */}
+          <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <form
+              onSubmit={handleSubmit}
+              className="glass-effect rounded-2xl p-8 border border-purple-500/20 space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
@@ -168,8 +195,6 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-white/5 border border-purple-500/20 rounded-lg focus:outline-none focus:border-purple-500/40 transition-colors duration-300"
                   placeholder="Enter your name"
                   required
@@ -177,15 +202,16 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Email
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-white/5 border border-purple-500/20 rounded-lg focus:outline-none focus:border-purple-500/40 transition-colors duration-300"
                   placeholder="Enter your email"
                   required
@@ -193,14 +219,15 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Your Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   rows={6}
                   className="w-full px-4 py-3 bg-white/5 border border-purple-500/20 rounded-lg focus:outline-none focus:border-purple-500/40 transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or just say hello!"
@@ -210,9 +237,10 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full py-3 gradient-primary text-white font-semibold rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg"
+                disabled={loading}
+                className="w-full py-3 gradient-primary text-white font-semibold rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg disabled:opacity-50"
               >
-                Send Message
+                {loading ? "Sending...💖" : "Send Message "}
               </button>
             </form>
           </div>
