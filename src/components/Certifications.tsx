@@ -5,36 +5,43 @@ const Certifications = () => {
       issuer: "Uxcel",
       date: "2025",
       image: "uxcel.png",
+      link: "https://app.uxcel.com/certificates/THT0ZVR64TC9", // 🔗 add your link
     },
     {
       title: "AI/ML Engineer - Stage 1",
       issuer: "SLIIT",
       date: "2025",
       image: "sliit.jpg",
+      link: "https://code.sliit.org/certificates/dzmt7qcdyh",
     },
-    {
-      title: "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
-      issuer: "Microsoft & LinkedIn",
-      date: "2025",
-      image: "linkedin.jpeg",
-    },
+   
     {
       title: "Introduction to User Experience Design",
       issuer: "Georgia Institute of Technology - Coursera",
       date: "2024",
       image: "coursera.jpeg",
+      link: "https://www.coursera.org/account/accomplishments/verify/5I85LQ4IHNSJ",
     },
     {
       title: "Figma Essential for UI/UX",
       issuer: "Udemy - Learnify IT",
       date: "2024",
       image: "udemy.jpg",
+      link: "https://www.udemy.com/certificate/UC-e9756da0-4d06-4bf0-bbdb-0b82780032ef/",
+    },
+     {
+      title: "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
+      issuer: "Microsoft & LinkedIn",
+      date: "2025",
+      image: "linkedin.jpeg",
+      link: "https://linkedin.com/certificate-link",
     },
     {
       title: "IT Essentials",
       issuer: "Cisco Networking Academy",
       date: "2025",
       image: "cisco.jpg",
+      link: "https://cisco.com/certificate-link",
     },
   ];
 
@@ -53,9 +60,12 @@ const Certifications = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
-            <div
+            <a
               key={index}
-              className="group glass-effect rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105 animate-scale-in"
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block glass-effect rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105 animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden rounded-lg mb-4">
@@ -73,7 +83,7 @@ const Certifications = () => {
               <p className="text-purple-300 text-sm mb-2">{cert.issuer}</p>
 
               <p className="text-muted-foreground text-sm">{cert.date}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
