@@ -2,15 +2,15 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Information and Communication Technology",
-      school: "University of Sri Jayewardenepura",
-      duration: "2022 - 2026",
+      school: "University of Sri Jayewardenepura - Faculty of Technology",
+      duration: "2023 - 2027",
       gpa: "3.8/4.0",
-      achievements: ["Dean’s List 2023", "Faculty Hackathon Winner 2024"],
+      achievements: ["ICT Society Logo Designer", "ICT Society, CryptX event Secretary", "J'pura Vikings Club Conntent Creation Head"],
       icon: "🎓"
     },
     {
       degree: "GCE A/L",
-      school: "Devi Balika Vidyalaya",
+      school: "Devi Balika Vidyalaya, Colombo 08",
       duration: "2019 - 2021",
       achievements: ["Passed GCE A/L with 2As & B"],
       icon: "💻"
