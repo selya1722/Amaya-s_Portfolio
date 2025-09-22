@@ -4,7 +4,7 @@ const Projects = () => {
     {
       title: "TechFlow Solutions – Business Performance Dashboard",
       description: "A data-driven dashboard that simplifies decision-making with clear KPIs, performance insights, and smart visual analytics.",
-      tech: ["Figma,", "Behance", "Prototyping"],
+      tech: ["Figma", "Behance", "Prototyping"],
       image: "tfs.png",
       gradient: "from-purple-500 to-blue-600",
        live: "https://www.figma.com/proto/vWWKyOBgQSLoOw2IqyZQO3/TFS-dashboard--my-first-?page-id=0%3A1&node-id=21-83&p=f&viewport=420%2C201%2C0.1&t=ccxKPmSJQZ3JmLde-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=21%3A83",   
