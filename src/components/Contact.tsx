@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Mail } from "lucide-react";
-import { toast } from "@/components/ui/use-toast"; // 👈 make sure shadcn toast is set up
+import { toast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
