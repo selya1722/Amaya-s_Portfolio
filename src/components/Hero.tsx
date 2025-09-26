@@ -7,7 +7,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [displayText, setDisplayText] = useState('');
 
-  const words = ['Frontend Developer', 'AI/ML Enthusiast'];
+  const words = ['UX/UI Designer', 'Frontend Developer'];
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -67,8 +67,8 @@ const Hero = () => {
           {/* Left Content */}
           <div className="animate-fade-in-up pt-20 lg:pt-0 px-4 lg:pl-12 flex flex-col justify-center h-full text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-black mb-8 leading-none overflow-visible">
-              <span className="gradient-text animate-gradient block pb-2">UX/UI</span>
-              <span className="gradient-text animate-gradient block pb-2">Designer</span>
+              <span className="gradient-text animate-gradient block pb-2">Amaya</span>
+              <span className="gradient-text animate-gradient block pb-2">Jayasekara</span>
               <span className="text-foreground block text-2xl md:text-3xl lg:text-4xl h-14 pt-2">
                 {displayText}
                 <span className="animate-pulse">|</span>
