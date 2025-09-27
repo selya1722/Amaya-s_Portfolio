@@ -81,7 +81,7 @@ const Contact = () => {
                       href="mailto:dewjayasekara78@gmail.com"
                       className="text-foreground underline hover:text-primary transition-colors"
                     >
-                      dewjayasekara78@gmail.com
+                     sayhi@itsmeamaya.me
                     </a>
                   </div>
                 </div>
@@ -104,23 +104,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* Uxcel */}
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">Ux</span>
-                  </div>
-                  <div>
-                    <p className="text-muted-foreground text-sm">Uxcel</p>
-                    <a
-                      href="https://app.uxcel.com/ux/amaya17"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground underline hover:text-primary transition-colors"
-                    >
-                      app.uxcel.com/ux/amaya17
-                    </a>
-                  </div>
-                </div>
+              
 
                 {/* GitHub */}
                 <div className="flex items-center space-x-4">
