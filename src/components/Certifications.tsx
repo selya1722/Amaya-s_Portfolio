@@ -46,16 +46,7 @@ const Certifications = () => {
   ];
 
   return (
-    <section id="certifications" className="py-20 relative">
-      <div className="container mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-5xl font-bold mb-6">
-            <span className="gradient-text">
-              Certifications & Uxcel Profile
-            </span>
-          </h2>
-        </div>
+ 
 
   <section id="certifications" className="py-20 relative">
   <div className="container mx-auto px-6">
