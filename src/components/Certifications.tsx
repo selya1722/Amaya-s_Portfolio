@@ -55,35 +55,43 @@ const Certifications = () => {
               Certifications & Uxcel Profile
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Continuous learning and professional development achievements
-          </p>
-          <div className="w-24 h-1 gradient-primary mx-auto rounded-full mt-6" />
         </div>
 
+        {/* Uxcel Profile Section */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up">
           <div className="w-full h-48 md:h-56 lg:h-64 max-w-sm overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
             <img
               src="uxcel.png" 
-              alt="UXcel Certificate"
+              alt="Uxcel Certificate"
               className="w-full h-full object-cover rounded-lg"
             />
+
+            {/* Floating badge */}
+            <div className="absolute top-3 right-3 bg-pink-300 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md animate-bounce">
+              10+ Courses
+            </div>
           </div>
-          <div className="text-center md:text-left">
-            <p className="text-lg text-muted-foreground mb-4">
-              Completed <strong>10+ courses</strong> on Uxcel to boost my UX/UI
-              skills
+
+          <div className="text-center md:text-left max-w-md">
+            <h3 className="text-xl font-bold mb-2 text-gray-200 dark:text-white">
+              Certified UX/UI Designer
+            </h3>
+            <p className="text-gray-350 dark:text-gray-300 mb-4">
+              Completed{" "}
+              <span className="font-semibold text-pink-300">10+ courses</span>{" "}
+              including UX Design Foundations, Research, Accessibility, and
+              Product Thinking on Uxcel. Constantly upgrading my skills to
+              design experiences that shine 🌸
             </p>
-            <center>
-              <a
-                href="https://app.uxcel.com/ux/amaya17"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 bg-pink-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-pink-500 hover:scale-105"
-              >
-                Visit Uxcel Profile
-              </a>
-            </center>
+
+            <a
+              href="https://app.uxcel.com/ux/amaya17"
+              target="_blank"
+              rel="noopener noreferrer"
+             className="inline-block px-5 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-full transition-all duration-300 hover:bg-pink-500 hover:scale-105"
+            >
+              Visit Uxcel Profile
+            </a>
           </div>
         </div>
 
