@@ -1,20 +1,12 @@
 const Certifications = () => {
   const certifications = [
     {
-      title: "PROFESSIONAL CERTIFICATION UX/UI Designer",
-      issuer: "Uxcel",
-      date: "2025",
-      image: "uxcel.png",
-      link: "https://app.uxcel.com/certificates/THT0ZVR64TC9", // 🔗 add your link
-    },
-    {
       title: "AI/ML Engineer - Stage 1",
       issuer: "SLIIT",
       date: "2025",
       image: "sliit.jpg",
       link: "https://code.sliit.org/certificates/dzmt7qcdyh",
     },
-   
     {
       title: "Introduction to User Experience Design",
       issuer: "Georgia Institute of Technology - Coursera",
@@ -29,8 +21,9 @@ const Certifications = () => {
       image: "udemy.jpg",
       link: "https://www.udemy.com/certificate/UC-e9756da0-4d06-4bf0-bbdb-0b82780032ef/",
     },
-     {
-      title: "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
+    {
+      title:
+        "Build Your Generative AI Productivity Skills with Microsoft and LinkedIn",
       issuer: "Microsoft & LinkedIn",
       date: "2025",
       image: "linkedin.jpeg",
@@ -43,14 +36,24 @@ const Certifications = () => {
       image: "cisco.jpg",
       link: "https://cisco.com/certificate-link",
     },
+    {
+      title: "Build a free website with WordPress",
+      issuer: "Coursera",
+      date: "2024",
+      image: "wordpress.png",
+      link: "https://www.coursera.org/account/accomplishments/verify/5WVC9VRNAMDR",
+    },
   ];
 
   return (
     <section id="certifications" className="py-20 relative">
       <div className="container mx-auto px-6">
+        {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl font-bold mb-6">
-            <span className="gradient-text">Certifications</span>
+            <span className="gradient-text">
+              Certifications & Uxcel Profile
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Continuous learning and professional development achievements
@@ -58,6 +61,33 @@ const Certifications = () => {
           <div className="w-24 h-1 gradient-primary mx-auto rounded-full mt-6" />
         </div>
 
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up">
+          <div className="w-full h-48 md:h-56 lg:h-64 max-w-sm overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
+            <img
+              src="uxcel.png" 
+              alt="UXcel Certificate"
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <div className="text-center md:text-left">
+            <p className="text-lg text-muted-foreground mb-4">
+              Completed <strong>10+ courses</strong> on Uxcel to boost my UX/UI
+              skills
+            </p>
+            <center>
+              <a
+                href="https://app.uxcel.com/ux/amaya17"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-pink-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:bg-pink-500 hover:scale-105"
+              >
+                Visit Uxcel Profile
+              </a>
+            </center>
+          </div>
+        </div>
+
+        {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <a
