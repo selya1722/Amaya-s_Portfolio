@@ -66,12 +66,11 @@ const Hero = () => {
           
           {/* Left Content */}
           <div className="animate-fade-in-up pt-20 lg:pt-0 px-4 lg:pl-12 flex flex-col justify-center h-full text-center lg:text-left">
-            <div className="w-full max-w-3xl mx-auto text-center lg:text-left">
-               <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight overflow-visible">
-                 <span className="gradient-text animate-gradient block">Amaya</span>
-                 <span className="gradient-text animate-gradient block">Jayasekara</span>
-               </h1>
-             </div>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight overflow-visible">
+  <span className="gradient-text animate-gradient block">Amaya</span>
+  <span className="gradient-text animate-gradient block">Jayasekara</span>
+</h1>
+
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0">
               Crafting beautiful digital experiences with passion, creativity, and cutting-edge technology
