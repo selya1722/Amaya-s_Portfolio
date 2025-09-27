@@ -57,43 +57,86 @@ const Certifications = () => {
           </h2>
         </div>
 
-        {/* Uxcel Profile Section */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12 animate-fade-in-up">
-          <div className="w-full h-48 md:h-56 lg:h-64 max-w-sm overflow-hidden rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105">
-            <img
-              src="uxcel.png" 
-              alt="Uxcel Certificate"
-              className="w-full h-full object-cover rounded-lg"
-            />
+  <section id="certifications" className="py-20 relative">
+  <div className="container mx-auto px-6">
+    {/* Section Header */}
+    <div className="text-center mb-16 animate-fade-in-up">
+      <h2 className="text-5xl font-bold mb-6">
+        <span className="gradient-text">
+          Certifications & Uxcel Profile
+        </span>
+      </h2>
+    </div>
 
-            {/* Floating badge */}
-            <div className="absolute top-3 right-3 bg-pink-300 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md animate-bounce">
-              10+ Courses
-            </div>
-          </div>
+    <div className="relative overflow-hidden rounded-xl py-12 px-6 md:px-16 mb-16">
+      {/* Gradient Glass Background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-pink-900 to-purple-900 opacity-80"></div>
 
-          <div className="text-center md:text-left max-w-md">
-            <h3 className="text-xl font-bold mb-2 text-gray-200 dark:text-white">
-              Certified UX/UI Designer
-            </h3>
-            <p className="text-gray-350 dark:text-gray-300 mb-4">
-              Completed{" "}
-              <span className="font-semibold text-pink-300">10+ courses</span>{" "}
-              including UX Design Foundations, Research, Accessibility, and
-              Product Thinking on Uxcel. Constantly upgrading my skills to
-              design experiences that shine 🌸
-            </p>
+      {/* ✨ Flickering Stars Layer */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(40)].map((_, i) => (
+          <div
+            key={i}
+            className={`absolute w-[2px] h-[2px] bg-white rounded-full opacity-70 animate-star-${i}`}
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 4}s`,
+            }}
+          />
+        ))}
+      </div>
 
-            <a
-              href="https://app.uxcel.com/ux/amaya17"
-              target="_blank"
-              rel="noopener noreferrer"
-             className="inline-block px-5 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-full transition-all duration-300 hover:bg-pink-500 hover:scale-105"
-            >
-              Visit Uxcel Profile
-            </a>
-          </div>
+      {/* Main Content */}
+      <div className="relative flex flex-col md:flex-row items-center gap-8">
+        {/* Certificate Image */}
+        <div className="flex-shrink-0 w-full md:w-1/2">
+          <img
+            src="uxcel.png"
+            alt="UXcel Certificate"
+            className="w-full h-auto rounded-lg shadow-xl"
+          />
         </div>
+
+        {/* Text Content */}
+        <div className="text-center md:text-left text-white md:w-1/2">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Certified UX/UI Designer
+          </h3>
+          <p className="mb-6 text-sm md:text-base">
+            Completed <span className="font-semibold">10+ courses</span> including UX Design Foundations, Research, Accessibility, and Product Thinking on Uxcel. Constantly upgrading my skills to design experiences that shine 🌸
+          </p>
+          <a
+            href="https://app.uxcel.com/ux/amaya17"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-blue-900 to-purple-900 text-white font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105 hover:from-pink-600 hover:to-purple-700"
+          >
+            Visit Uxcel Profile
+          </a>
+        </div>
+      </div>
+
+      {/* 🌟 Star Flicker Animations */}
+      <style>
+        {`${[...Array(40)]
+          .map(
+            (_, i) => `
+          .animate-star-${i} {
+            animation: flicker-${i} ${2 + Math.random() * 3}s infinite alternate ease-in-out;
+          }
+          @keyframes flicker-${i} {
+            0%, 100% { opacity: 0.2; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+          }
+        `
+          )
+          .join("\n")}`}
+      </style>
+    </div>
+  </div>
+</section>
+
 
         {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
