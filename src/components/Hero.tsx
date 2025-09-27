@@ -66,7 +66,7 @@ const Hero = () => {
           
           {/* Left Content */}
           <div className="animate-fade-in-up pt-20 lg:pt-0 px-4 lg:pl-12 flex flex-col justify-center h-full text-center lg:text-left">
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-black mb-8 leading-none overflow-visible">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-black mb-8 leading-tight break-words">
             <span className="gradient-text animate-gradient block pb-2">Amaya</span> 
             <span className="gradient-text animate-gradient block pb-2">Jayasekara</span>
             <span className="text-foreground block text-2xl md:text-3xl lg:text-4xl h-14 pt-2"> {displayText}
