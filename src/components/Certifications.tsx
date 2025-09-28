@@ -58,9 +58,12 @@ const Certifications = () => {
         </div>
 
         {/* Uxcel Profile Section with Flickering Stars */}
-        <div className="relative overflow-hidden rounded-xl py-12 px-6 md:px-16 mb-16">
-          {/* Glass Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-pink-900 to-purple-900 opacity-80 rounded-xl backdrop-blur-lg"></div>
+       <div 
+  className="relative overflow-hidden rounded-xl py-12 px-6 md:px-16 mb-16"
+  style={{ borderRadius: "1rem" }}
+>
+  {/* Gradient Background */}
+  <div className="absolute inset-0 bg-gradient-to-r from-blue-900 via-pink-900 to-purple-900 opacity-80 rounded-xl backdrop-blur-lg"></div>
 
           {/* ✨ Flickering Stars Layer */}
           <div className="absolute inset-0 overflow-hidden">
@@ -81,13 +84,16 @@ const Certifications = () => {
           </div>
 
           {/* Main Content */}
-          <div className="relative flex flex-col md:flex-row items-center gap-8">
-            {/* Certificate Image */}
-           <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
+         <div className="relative flex flex-col md:flex-row items-center gap-8">
+    <div 
+      className="flex-shrink-0 w-full md:w-1/2 flex justify-center"
+      style={{ maxWidth: "100%" }} >
+    
               <img
                   src="uxcel.png"
-                  alt="UXcel Certificate"
-                  className="w-3/4 md:w-2/3 h-auto rounded-lg shadow-xl"
+                  alt="Uxcel Certificate"
+                 className="w-3/4 md:w-2/3 h-auto rounded-lg shadow-xl"
+        style={{ width: "100%", borderRadius: "1.4rem" }}
                 />
             </div>  
             {/* Text Content */}
@@ -105,7 +111,7 @@ const Certifications = () => {
                 href="https://app.uxcel.com/ux/amaya17"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-white to-pink-200 text-pink-700 font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105 hover"
+                className="inline-block px-6 py-3 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 text-white font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105 hover"
               >
                 Visit Uxcel Profile
               </a>
