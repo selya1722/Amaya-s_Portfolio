@@ -4,7 +4,6 @@ const Education = () => {
       degree: "Bachelor of Information and Communication Technology",
       school: "University of Sri Jayewardenepura - Faculty of Technology",
       duration: "2023 - 2027",
-      gpa: "3.8/4.0",
       achievements: ["ICT Society Logo Designer", "ICT Society, CryptX event Secretary", "J'pura Vikings Club Conntent Creation Head"],
       icon: "🎓"
     },
