@@ -92,9 +92,8 @@ const Certifications = () => {
               <img
                   src="uxcel.png"
                   alt="Uxcel Certificate"
-                 className="w-3/4 md:w-2/3 h-auto rounded-lg shadow-xl"
-        style={{ width: "100%", borderRadius: "1.4rem" }}
-                />
+    className="w-full max-w-md md:max-w-lg h-auto rounded-xl shadow-xl mx-auto transition-transform duration-300 hover:scale-105"
+/>
             </div>  
             {/* Text Content */}
             <div className="text-center md:text-left text-white md:w-1/2">
@@ -111,7 +110,7 @@ const Certifications = () => {
                 href="https://app.uxcel.com/ux/amaya17"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 text-white font-semibold rounded-full shadow-md transition-transform duration-300 hover:scale-105 hover"
+                className="inline-block px-5 py-2 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-white font-semibold rounded-xl shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg"
               >
                 Visit Uxcel Profile
               </a>
