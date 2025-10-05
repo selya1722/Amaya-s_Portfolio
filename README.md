@@ -1,7 +1,7 @@
-# 💖 itsmeamaya.me ✨
+# 💖 itsmeamaya.me
 
-Hey hey! 👋 Welcome to **itsmeamaya.me** — my little corner of the internet 🌸  
-It’s where I pour my heart into **design**, sprinkle in some **code magic**, and show off the ✨boss-lady energy✨ I’m growing into 💼💕
+Hey hey! 👋 Welcome to **itsmeamaya.me** — my little corner of the internet   
+It’s where I pour my heart into **design**, sprinkle in some **code magic**, and show off the ✨boss-lady energy✨ I’m growing into 💼
 
 > Built with love, caffeine, and lots of pink dreams ☕💗
 
@@ -29,6 +29,6 @@ So yep, she’s cute *and* powerful 💅
 ---
 
 ## 🌐 Live Site
-✨ itsmeamaya.me✨
+[itsmeamaya.me](https://itsmeamaya.me)
 Go peek around and vibe with my world 💫
 
