@@ -15,7 +15,7 @@ const Education = () => {
     {
       degree: "GCE A/L",
       school: "Devi Balika Vidyalaya, Colombo 08",
-      duration: "2019 - 2021",
+      duration: "2019 - 2022",
       achievements: ["Passed GCE A/L with 2As & B"],
       icon: "devi.png",
     },
