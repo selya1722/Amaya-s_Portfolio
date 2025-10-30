@@ -129,7 +129,7 @@ const Projects = () => {
                       to={project.code}
                       className="flex-1 py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center"
                     >
-                      View More
+                      View Case Study
                     </Link>
                   ) : (
                     <a
