@@ -114,12 +114,12 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-3">
+                <div className="flex flex-col sm:flex-row justify-center gap-3 w-full">
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2 px-4 gradient-primary text-white rounded-lg hover:scale-105 transition-transform duration-300 text-center"
+                    className="flex-1 w-full sm:w-auto py-2 px-4 gradient-primary text-white rounded-lg hover:scale-105 transition-transform duration-300 text-center whitespace-nowrap"
                   >
                     View Live
                   </a>
@@ -127,7 +127,7 @@ const Projects = () => {
                   {project.code.startsWith("/") ? (
                     <Link
                       to={project.code}
-                      className="flex-1 py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center"
+                      className="flex-1 w-full sm:w-auto py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center whitespace-nowrap"
                     >
                       View Case Study
                     </Link>
@@ -136,7 +136,7 @@ const Projects = () => {
                       href={project.code}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center"
+                      className="flex-1 w-full sm:w-auto py-2 px-4 glass-effect border border-purple-500/30 rounded-lg hover:scale-105 transition-transform duration-300 text-center whitespace-nowrap"
                     >
                       View More
                     </a>
