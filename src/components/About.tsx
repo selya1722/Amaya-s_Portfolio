@@ -42,7 +42,7 @@ const About = () => {
               <div className="relative z-10 glass-effect rounded-3xl p-8 border border-purple-500/20">
                 <div className="w-full h-96 rounded-2xl overflow-hidden">
                   <img
-                    src="images/dew.jpg"
+                    src="images/IMG_0516.jpeg"
                     alt="Profile"
                     className="w-full h-full object-cover object-center"
                   />
