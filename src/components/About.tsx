@@ -42,14 +42,13 @@ const About = () => {
               <div className="relative z-10 glass-effect rounded-3xl p-8 border border-purple-500/20">
                 <div className="w-full h-96 rounded-2xl overflow-hidden">
                   <img
-                    src="images/IMG_0516.jpeg"
+                    src="images/bio.jpg"
                     alt="Profile"
                     className="w-full h-full object-cover object-center"
                   />
                 </div>
               </div>
-              {/* Add this inside the Content Side div, after the grid */}
-              {/* Add this inside the Content Side div, after the grid */}
+              
               <center>
                 <div className="pt-6">
                   {/* replace with your actual CV file path */}
