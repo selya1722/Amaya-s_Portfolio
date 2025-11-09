@@ -32,9 +32,9 @@ const App = () => (
 
           {/*Achievements */}
 
-          <Route path="/artemia" element={<Artemia />} />
-          <Route path="/logoicts" element={<ICTLogo />} />
-          <Route path="/MSquiz" element={<MSquiz />} />
+          <Route path="/achievements/artemia" element={<Artemia />} />
+          <Route path="/achievements/logoicts" element={<ICTLogo />} />
+          <Route path="/achievements/MSquiz" element={<MSquiz />} />
 
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
