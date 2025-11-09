@@ -52,21 +52,21 @@ const Certifications = () => {
       title: "Designathon Winner 2025",
       subtitle: "1st Place - Artemia 1.0",
       image: "images/hackathon.jpg",
-      link: "/achievements/artemia",
+      link: "/artemia",
     },
     {
       id: "logoicts",
       title: "ICT Society Logo 2024",
       subtitle: "Faculty of Technology, USJ",
       image: "/achievements/logoicts.jpg",
-      link: "/achievements/logoicts",
+      link: "/logoicts",
     },
     {
       id: "MSquiz",
       title: "Microsoft Champs June Month 2024",
       subtitle: "Microsoft Sri Lanka 2024",
       image: "/achievements/2mq.jpg",
-      link: "/achievements/MSquiz",
+      link: "/MSquiz",
     },
   ];
 
