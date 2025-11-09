@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Certifications = () => {
   const certifications = [
     {
@@ -34,7 +36,6 @@ const Certifications = () => {
       issuer: "University of Sri Jayewardenepura",
       date: "2025",
       image: "/images/artemiachamps.jpg",
-      
     },
     {
       title: "Build a free website with WordPress",
@@ -66,7 +67,7 @@ const Certifications = () => {
       title: "Microsoft Champs June Month 2024",
       subtitle: "Microsoft Sri Lanka 2024",
       image: "images/achievements/2mq.jpg",
-      link: "/MSquiz",
+      link: "/msquiz",
     },
   ];
 
@@ -82,7 +83,6 @@ const Certifications = () => {
           </h2>
         </div>
 
-        
         {/* Certifications Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {certifications.map((cert, index) => (
@@ -120,27 +120,49 @@ const Certifications = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {achievements.map((a) => (
-            <a
-              key={a.id}
-              href={a.link}
-              className="group block bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105"
-            >
-              <img
-                src={a.image}
-                alt={a.title}
-                className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105"
-              />
-              <h4 className="text-lg font-bold mb-2 text-white group-hover:text-pink-400 transition-all duration-300">
-                {a.title}
-              </h4>
-              <p className="text-sm text-purple-300">{a.subtitle}</p>
-            </a>
-          ))}
+          {achievements.map((a) =>
+            a.link.startsWith("http") ? (
+              // external links
+              <a
+                key={a.id}
+                href={a.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105"
+              >
+                <img
+                  src={a.image}
+                  alt={a.title}
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105"
+                />
+                <h4 className="text-lg font-bold mb-2 text-white group-hover:text-pink-400 transition-all duration-300">
+                  {a.title}
+                </h4>
+                <p className="text-sm text-purple-300">{a.subtitle}</p>
+              </a>
+            ) : (
+              // internal links (handled by React Router)
+              <Link
+                key={a.id}
+                to={a.link}
+                className="group block bg-white/5 backdrop-blur-lg rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:scale-105"
+              >
+                <img
+                  src={a.image}
+                  alt={a.title}
+                  className="w-full h-48 object-cover rounded-lg mb-4 transition-transform duration-300 group-hover:scale-105"
+                />
+                <h4 className="text-lg font-bold mb-2 text-white group-hover:text-pink-400 transition-all duration-300">
+                  {a.title}
+                </h4>
+                <p className="text-sm text-purple-300">{a.subtitle}</p>
+              </Link>
+            )
+          )}
         </div>
       </div>
 
-      {/* Flicker Animation Keyframes */}
+      {/* Flicker Animation */}
       <style>{`
         @keyframes flicker {
           0%, 100% { opacity: 0.2; transform: scale(0.8); }
