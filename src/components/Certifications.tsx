@@ -58,14 +58,14 @@ const Certifications = () => {
       id: "logoicts",
       title: "ICT Society Logo 2024",
       subtitle: "Faculty of Technology, USJ",
-      image: "/achievements/logoicts.jpg",
+      image: "images/achievements/logoicts.jpg",
       link: "/achievements/logoicts",
     },
     {
       id: "MSquiz",
       title: "Microsoft Champs June Month 2024",
       subtitle: "Microsoft Sri Lanka 2024",
-      image: "/achievements/2mq.jpg",
+      image: "images/achievements/2mq.jpg",
       link: "/achievements/MSquiz",
     },
   ];
