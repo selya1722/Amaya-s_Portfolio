@@ -10,8 +10,8 @@ import SheSafe from "./pages/shesafe";
 import TFS from "./pages/tfs";
 import NotFound from "./pages/NotFound";
 import Aloe from "./pages/aloe";
-import artemia from "./pages/artemia";
-import logoicts from "./pages/logoicts";
+import Artemia from "./pages/artemia";
+import ICTLogo from "./pages/logo";
 import MSquiz from "./pages/MSquiz";
 
 const queryClient = new QueryClient();
@@ -32,8 +32,8 @@ const App = () => (
 
           {/*Achievements */}
 
-          <Route path="/artemia" element={<artemia />} />
-          <Route path="/logoicts" element={<logoicts />} />
+          <Route path="/artemia" element={<Artemia />} />
+          <Route path="/logoicts" element={<ICTLogo />} />
           <Route path="/MSquiz" element={<MSquiz />} />
 
           {/* Catch-all route */}
