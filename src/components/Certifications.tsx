@@ -109,7 +109,7 @@ const Certifications = () => {
           ))}
         </div>
 
-        {/*Achievements Section */}
+        {/* 🌟 Achievements Section */}
         <div className="text-center mb-12">
           <h3 className="text-5xl font-semibold mb-6 gradient-text">
             Achievements
