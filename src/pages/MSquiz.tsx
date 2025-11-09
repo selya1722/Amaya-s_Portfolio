@@ -14,19 +14,19 @@ const MicrosoftChampsTimeline: React.FC = () => {
       title: "At Microsoft Champs Sri Lanka June 2025",
       description:
         "A proud moment representing myself at the Microsoft Champs Sri Lanka June 2025. Gained knowledge to build an image classifier with Azure Custom Vision!",
-      image: "/achievements/2mq.jpg",
+      image: "/images/achievements/2mq.jpg",
     },
     {
       title: "My Reward",
       description:
         "Receiving the gift for winning the Microsoft Champs Quiz 2025 — a token of achievement and motivation to keep pushing forward!",
-      image: "/achievements/1mq.jpg",
+      image: "/images/achievements/1mq.jpg",
     },
     {
       title: "Microsoft Session",
       description:
         "Attending the official Microsoft session, connecting with peers, and learning new tech insights that inspired me for the future.",
-      image: "/achievements/3mq.jpg",
+      image: "/images/achievements/3mq.jpg",
     },
   ];
 
