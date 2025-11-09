@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "@/components/ScrollToTop";
+
 import Index from "./pages/Index";
 import Projects from "@/components/Projects";
 
@@ -29,6 +31,9 @@ const App: React.FC = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          {/* Auto scrolls to top on route change */}
+          <ScrollToTop />
+
           <Routes>
             {/* Main Routes */}
             <Route path="/" element={<Index />} />
