@@ -6,42 +6,51 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Index from "./pages/Index";
 import Projects from "@/components/Projects";
+
+// Projects
 import SheSafe from "./pages/shesafe";
 import TFS from "./pages/tfs";
-import NotFound from "./pages/NotFound";
 import Aloe from "./pages/aloe";
+
+// Achievements
 import Artemia from "./pages/artemia";
 import ICTLogo from "./pages/logo";
-import MSquiz from "./pages/MSquiz";
+import MSQuiz from "./pages/MSquiz";
+
+// Misc
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          {/* Main Routes */}
-          <Route path="/" element={<Index />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/shesafe" element={<SheSafe />} />
-          <Route path="/tfs" element={<TFS />} />
-          <Route path="/aloe" element={<Aloe />} />
+const App: React.FC = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            {/* Main Routes */}
+            <Route path="/" element={<Index />} />
+            <Route path="/projects" element={<Projects />} />
 
-          {/*Achievements */}
+            {/* Project Routes */}
+            <Route path="/shesafe" element={<SheSafe />} />
+            <Route path="/tfs" element={<TFS />} />
+            <Route path="/aloe" element={<Aloe />} />
 
-          <Route path="/artemia" element={<Artemia />} />
-          <Route path="/logoicts" element={<ICTLogo />} />
-          <Route path="/MSquiz" element={<MSquiz />} />
+            {/* Achievements */}
+            <Route path="/artemia" element={<Artemia />} />
+            <Route path="/logoicts" element={<ICTLogo />} />
+            <Route path="/msquiz" element={<MSQuiz />} />
 
-          {/* Catch-all route */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+            {/* Fallback */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
