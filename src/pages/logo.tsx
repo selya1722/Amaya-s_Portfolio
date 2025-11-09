@@ -16,7 +16,7 @@ const ICTLogo2024: React.FC = () => {
 
         {/* Logo Image */}
         <motion.img
-          src="/achievements/logoicts.jpg" 
+          src="/images/achievements/logoicts.jpg" 
           alt="ICT Society Logo 2024"
           className="mx-auto w-64 h-64 md:w-80 md:h-80 object-contain rounded-2xl shadow-2xl"
           initial={{ opacity: 0, scale: 0.8 }}
