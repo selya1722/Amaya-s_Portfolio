@@ -32,7 +32,17 @@ const Projects = () => {
       code: "/aloe",
     },
     {
-      title: "BCS Solutions Website",
+      title: "AuraSafe - Women's Safety App (Designathon Winner)",
+      description:
+        "A smart women's safety app with quick action button, SOS alerts and smart ring integration, proudly winning 1st place at Designathon for redefining modern protection.",
+      tech: ["Figma", "Canva", "Google Forms"],
+      image: "images/auracover.png",
+      gradient: "from-purple-500 to-white-600",
+      live: "https://www.figma.com/proto/rDpoYLiyumW57abNtUzfch/Team-Valkyries?page-id=0%3A1&node-id=95-1392&p=f&viewport=116%2C240%2C0.04&t=3Tdf1d18TEvQttC4-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=95%3A1392",
+      code: "https://www.figma.com/design/rDpoYLiyumW57abNtUzfch/Team-Valkyries?node-id=0-1&t=n2mxFtbfgMRhoNFJ-1",
+    },
+    {
+      title: "BCS Solutions - Security Services Providers' Website",
       description:
         "A modern, fully responsive website designed to showcase professional security solutions and services, emphasizing trust, reliability, and strong client engagement.",
       tech: ["Typescript", "Next.js", "tailwindcss", "Vercel"],
@@ -41,6 +51,18 @@ const Projects = () => {
       live: "https://bcs-solutions.vercel.app",
       code: "https://github.com/selya1722/bcs-solutions",
     },
+    {
+      title:
+        "Bloomly - a SaaS product landing page for a wellness and productivity app.",
+      description:
+        "Find your flow with mindful planning, habit tracking, and AI-powered mood journaling — helping you stay productive, peaceful, and in tune with yourself.",
+      tech: ["Figma", "Canva"],
+      image: "images/bloomy1.png",
+      gradient: "from-purple-500 to-white-600",
+      live: "https://www.figma.com/proto/bDh0R5OqPSH4eWl6GuyDQ1/Bloomly-Saas?page-id=0%3A1&node-id=20-3163&p=f&viewport=120%2C-89%2C0.18&t=kWoAcVX46EComzBi-1&scaling=scale-down-width&content-scaling=fixed",
+      code: "https://www.figma.com/design/bDh0R5OqPSH4eWl6GuyDQ1/Bloomly-Saas?node-id=0-1&t=eaIunvt2ki7TmxPV-1",
+    },
+
     {
       title: "App Ratings Predictor - Smarter Insights with AI",
       description: "UI/UX + ML to predict app performance and enhance UX.",
@@ -73,7 +95,8 @@ const Projects = () => {
       link: "https://medium.com/@dewjayasekara78/how-i-fell-in-love-with-ux-design-and-found-my-voice-in-pixels-dd834821c740",
     },
     {
-      title: "Designing the Designer: My Journey to Building a UX Portfolio That Never Feels Done",
+      title:
+        "Designing the Designer: My Journey to Building a UX Portfolio That Never Feels Done",
       date: "October 31, 2025",
       description:
         "Explore my evolving UX journey — how I built, learned, and found inspiration.",
@@ -102,7 +125,8 @@ const Projects = () => {
               My <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my latest work, featuring innovative solutions and creative implementations
+              A showcase of my latest work, featuring innovative solutions and
+              creative implementations
             </p>
             <div className="w-24 h-1 gradient-primary mx-auto rounded-full mt-6" />
           </div>
