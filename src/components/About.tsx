@@ -50,16 +50,16 @@ const About = () => {
               {/* Add this inside the Content Side div, after the grid */}
               <center>
                 <div className="pt-6">
-                  {/* replace with your actual CV file path */}
+                  
                   <a
-                    href="Amaya Jayasekara CV.pdf"
+                    href="https://drive.google.com/drive/folders/1r2khU8gq67_hZMiaGpg8c0WThSjUQG0g?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-3 text-white text-lg font-medium rounded-full
   bg-pink-500/10 backdrop-blur-md border border-white/40 shadow-lg
   hover:bg-pink-500/30 transition duration-200"
                   >
-                    View CV
+                    Watch My Intro
                   </a>
                 </div>
               </center>
