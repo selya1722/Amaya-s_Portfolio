@@ -35,7 +35,7 @@ const Projects = () => {
       title: "AuraSafe - Women's Safety App (Designathon Winner)",
       description:
         "A smart women's safety app with quick action button, SOS alerts and smart ring integration, proudly winning 1st place at Designathon for redefining modern protection.",
-      tech: ["Figma", "Canva", "Google Forms"],
+      tech: ["Figma", "Figjam", "Canva", "Google Forms"],
       image: "images/auracover.png",
       gradient: "from-purple-500 to-white-600",
       live: "https://www.figma.com/proto/rDpoYLiyumW57abNtUzfch/Team-Valkyries?page-id=0%3A1&node-id=95-1392&p=f&viewport=116%2C240%2C0.04&t=3Tdf1d18TEvQttC4-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=95%3A1392",
