@@ -52,7 +52,7 @@ const Certifications = () => {
       id: "Artemia",
       title: "Designathon Winner 2025",
       subtitle: "1st Place - Artemia 1.0",
-      image: "images/hackathon.jpg",
+      image: "images/win.jpg",
       link: "/artemia",
     },
     {
@@ -64,8 +64,8 @@ const Certifications = () => {
     },
     {
       id: "MSquiz",
-      title: "Microsoft Champs June Month 2024",
-      subtitle: "Microsoft Sri Lanka 2024",
+      title: "Microsoft Champs June Month 2025",
+      subtitle: "Microsoft Sri Lanka 2025",
       image: "images/achievements/2mq.jpg",
       link: "/msquiz",
     },
