@@ -30,9 +30,8 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold gradient-text">
-            Amaya
+            𝓐𝓙
           </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
