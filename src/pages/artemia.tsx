@@ -48,7 +48,7 @@ const Artemia2025: React.FC = () => {
       title: "Victory Moment",
       description:
         "After all the hard work and sleepless nights — Won First Place at Artemia 1.0 Designathon (USJ 2025)! A milestone that truly marked the start of my designer journey.",
-      image: "/images/win.jpg",
+      image: "/images/my4.jpg",
     },
   ];
 
@@ -144,3 +144,4 @@ const Artemia2025: React.FC = () => {
 };
 
 export default Artemia2025;
+
