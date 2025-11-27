@@ -46,13 +46,13 @@ const Certifications = () => {
     },
   ];
 
-  // ✨ New Achievements Array
+  // New Achievements Array
   const achievements = [
     {
       id: "Artemia",
       title: "Designathon Winner 2025",
       subtitle: "1st Place - Artemia 1.0",
-      image: "images/win.jpg",
+      image: "images/my3.jpg",
       link: "/artemia",
     },
     {
@@ -81,6 +81,83 @@ const Certifications = () => {
               Certifications & Uxcel Profile
             </span>
           </h2>
+        </div>
+
+        {/* Uxcel Profile Card */}
+        <div className="w-full px-6 md:px-10 lg:px-20 mb-20">
+          <div
+            className="bg-gradient-to-r from-blue-600/40 via-purple-600/40 to-pink-600/40 
+        rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl relative overflow-hidden"
+          >
+            {/* Stars - subtle */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="w-1 h-1 bg-white/40 rounded-full absolute top-10 left-20 animate-pulse"></div>
+              <div className="w-1 h-1 bg-white/30 rounded-full absolute top-1/3 left-1/2 animate-pulse"></div>
+              <div className="w-1 h-1 bg-white/40 rounded-full absolute bottom-20 right-28 animate-pulse"></div>
+            </div>
+
+            {/* Flex Layout */}
+            <div className="flex flex-col lg:flex-row items-center gap-10 relative z-10">
+              {/* Certificate Image */}
+              <div className="w-full lg:w-1/2 flex justify-center">
+                <img
+                  src="images/uxcel.png"
+                  alt="Uxcel Certificate"
+                  className="w-full max-w-md rounded-xl shadow-2xl"
+                />
+              </div>
+
+              {/* Text Section */}
+              <div className="w-full lg:w-1/2 text-center lg:text-left">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+                  Certified UX/UI Designer
+                </h2>
+
+                <p className="text-purple-100 text-sm md:text-base leading-relaxed mb-6 max-w-xl">
+                  Completed{" "}
+                  <span className="text-pink-300 font-semibold">
+                    10+ courses
+                  </span>{" "}
+                  including UX Foundations, Research, Accessibility, and Product
+                  Thinking on Uxcel. Constantly leveling up to create designs
+                  that feel magical and meaningful.
+                </p>
+
+                <a
+                  href="https://app.uxcel.com/ux/amaya17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 className="
+    relative inline-block px-6 py-3 rounded-full font-semibold text-white
+    backdrop-blur-xl bg-white/10 
+    border border-white/20 
+    shadow-lg overflow-hidden
+    transition-all duration-300
+    hover:bg-white/20 hover:shadow-pink-500/30 hover:scale-105
+  "
+>
+  {/* Gradient Shine */}
+  <span
+    className="
+      absolute inset-0 bg-gradient-to-r from-purple-500/40 to-pink-500/40
+      opacity-60 mix-blend-overlay pointer-events-none
+    "
+  ></span>
+
+  {/* Light Glow Line */}
+  <span
+    className="
+      absolute top-0 left-0 w-full h-[2px]
+      bg-gradient-to-r from-transparent via-pink-300 to-transparent
+      opacity-70
+    "
+  ></span>
+
+  <span className="relative z-10">Visit Uxcel Profile</span>
+</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Certifications Grid */}
@@ -122,7 +199,6 @@ const Certifications = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {achievements.map((a) =>
             a.link.startsWith("http") ? (
-              // external links
               <a
                 key={a.id}
                 href={a.link}
@@ -141,7 +217,6 @@ const Certifications = () => {
                 <p className="text-sm text-purple-300">{a.subtitle}</p>
               </a>
             ) : (
-              // internal links (handled by React Router)
               <Link
                 key={a.id}
                 to={a.link}
