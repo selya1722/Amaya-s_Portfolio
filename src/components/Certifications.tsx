@@ -86,7 +86,6 @@ const Certifications = () => {
         {/* Uxcel Profile Card */}
         <div className="w-full px-2 md:px-8 lg:px-20 mb-20">
           <div
-            <div
             className="bg-gradient-to-r from-blue-900/40 via-purple-800/40 to-pink-600/40 
         rounded-3xl p-8 md:p-12 lg:p-16 shadow-xl relative overflow-hidden"
           >
